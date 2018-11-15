@@ -1,0 +1,45 @@
+body{
+    margin: 3%;
+}
+
+header h1{
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    font-size: 4em;
+    margin: 0;
+}
+
+header p{
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+header .tooltip{
+    color: #29B6F6;
+    position: relative;
+    display: inline-block;
+}
+
+header .tooltip:hover{
+    color: black;
+    cursor: default;
+}
+
+.tooltip .tooltip-content {
+    display: none;
+    background-color: #29B6F6;
+    color: white;
+    width: 20vw;
+}
+
+.tooltip:hover .tooltip-content {
+    position: absolute;
+    left: 0px;
+    display: block;
+}
+
+hr{
+    border: 2px solid;
+    margin-top: 3vh;
+}

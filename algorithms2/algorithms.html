@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=VT323|Vollkorn:400,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/algorithms.css">
     <script src="js/algorithms.js"></script>
@@ -11,19 +13,76 @@
     <header>
         <h1>Fundamental Algorithms</h1>
         <p>
-            This page explains the algorithms fundamental to computer science, along with their
-            <span class="tooltip">pseudocode
-                <span class="tooltip-content">A high-level description of an algorithm, not relating to any specific programming language.</span>
+            This website explains the algorithms fundamental to computer science, along with their
+            <span class="expl">pseudocode
+                <span class="expl-content">A high-level description of an algorithm, not relating to any specific
+                    programming language.</span>
             </span> and
-            <span class="tooltip">complexity
-                <span class="tooltip-content">The amount of time taken to execute an algorithm (time complexity), measured in Big-O.</span>
+            <span class="expl">complexity
+                <span class="expl-content">The amount of time taken to execute an algorithm (time complexity), measured
+                    in Big-O.</span>
             </span>
         </p>
     </header>
     <hr>
-    <section>
+    <section id="main">
+        <div class="row">
+            <div class="col col-md-2">
+                <h2>Sorting</h2>
+                <p>
+                    <span onclick="toggleDisplay(this)">> Selection Sort</span><br>
+                    <span onclick="toggleDisplay(this)">> Insertion Sort</span><br>
+                    <span onclick="toggleDisplay(this)">> Bubble Sort</span><br>
+                    <span onclick="toggleDisplay(this)">> Quick Sort</span><br>
+                    <span onclick="toggleDisplay(this)">> Merge Sort</span><br>
+                    <span onclick="toggleDisplay(this)">> Shell Sort</span><br>
+                    <span onclick="toggleDisplay(this)">> Radix Sort</span><br>
+                    <span onclick="toggleDisplay(this)">> Heap Sort</span><br>
+                </p>
+            </div>
+            <div class="col col-md-2">
+                <h2>Searching</h2>
+                <p>
+                    <span onclick="toggleDisplay(this)">> Sequential Search</span><br>
+                    <span onclick="toggleDisplay(this)">> Binary Search</span><br>
+                    <span onclick="toggleDisplay(this)">> Binary Search Tree</span><br>
+                    <span onclick="toggleDisplay(this)">> Interpolation Search</span><br>
+                    <span onclick="toggleDisplay(this)">> Hashing</span><br>
+                </p>
+            </div>
+            <div class="display col col-md-8">
+                <div id="screen-container">
+                    <div id="screen">
+                        <!-- ### Sorts ### -->
+                        <div class="hide" id="SelectionSort">
+                            <h1>Selection Sort</h1>
+                            <p>
+                                Simple sorting algorithm that iterates over the whole array on each pass to find the smallest value, then inserts it into the correct place at the start. After <i>i</i> iterations, the first <i>i</i> elements are in their sorted position.
+                            </p>
+                        </div>
+                        <div class="hide" id="InsertionSort"><h1>Insertion Sort</h1></div>
+                        <div class="hide" id="BubbleSort"><h1>Bubble Sort</h1></div>
+                        <div class="hide" id="QuickSort"><h1>Quick Sort</h1></div>
+                        <div class="hide" id="MergeSort"><h1>Merge Sort</h1></div>
+                        <div class="hide" id="ShellSort"><h1>Shell Sort</h1></div>
+                        <div class="hide" id="RadixSort"><h1>Radix Sort</h1></div>
+                        <div class="hide" id="HeapSort"><h1>Heap Sort</h1></div>
+                        <!-- ### Searches ### -->
+                        <div class="hide" id="SequentialSearch"><h1>Sequential Search</h1></div>
+                        <div class="hide" id="BinarySearch"><h1>Binary Search</h1></div>
+                        <div class="hide" id="BinarySearchTree"><h1>Binary Search Tree</h1></div>
+                        <div class="hide" id="InterpolationSearch"><h1>Interpolation Search</h1></div>
+                        <div class="hide" id="Hashing"><h1>Hashing</h1></div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <hr>
+    <footer>
+        <p><a href="http://liamp.uk">liamp.uk</a></p>
+    </footer>
 </body>
 
 </html>
